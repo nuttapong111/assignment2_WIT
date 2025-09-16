@@ -431,6 +431,28 @@ header{
     .items.quarter.img70.cities li {
         padding: 15px;
     }
+    
+    .items.quarter {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .items.quarter li img {
+        height: 150px;
+    }
+    
+    .items.third {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .items.third li img {
+        height: 150px;
+    }
+    
+    .padding5080 {
+        padding: 40px 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -441,6 +463,36 @@ header{
     
     .items.quarter.img70.cities li {
         padding: 12px;
+    }
+    
+    .items.quarter {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .items.quarter li img {
+        height: 120px;
+    }
+    
+    .font32 {
+        font-size: 24px;
+    }
+    
+    .items.third {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .items.third li img {
+        height: 120px;
+    }
+    
+    .black-background .font32 {
+        font-size: 24px;
+    }
+    
+    .padding5080 {
+        padding: 30px 15px;
     }
 }
 
@@ -462,6 +514,141 @@ header{
         flex-direction: column;
         gap: 10px;
     }
+}
+
+/* Accommodations Section */
+.items.quarter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.items.quarter a {
+    text-decoration: none;
+    color: #333;
+}
+
+.items.quarter li {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.items.quarter li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.items.quarter li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.items.quarter li b {
+    display: block;
+    padding: 16px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    background: white;
+}
+
+.font32 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+/* Black Background Section */
+.black-background {
+    background-color: #000000;
+    color: white;
+}
+
+.padding5080 {
+    padding: 50px 80px;
+}
+
+.black-background .font32 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.black-background .font14 {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+/* Third Cards Section */
+.items.third {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items.third a {
+    text-decoration: none;
+    color: #333;
+}
+
+.items.third li {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.items.third li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.items.third li img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.items.third li b {
+    display: block;
+    padding: 16px 20px 8px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background: white;
+}
+
+.items.third li div {
+    padding: 0 20px 16px 20px;
+    font-size: 14px;
+    color: #666;
+    background: white;
+    line-height: 1.4;
 }
 
 /* Additional styling for better visual appeal */
